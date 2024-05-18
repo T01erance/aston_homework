@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class ImmutablePerson {
-    private String name;
-    private int age;
-    private List<String> hobbies;
+    private final String name;
+    private final int age;
+    private final List<String> hobbies;
 
     public ImmutablePerson(String name, int age, List<String> hobbies) {
         List<String> hobbiesCopy = new ArrayList<>(hobbies);
