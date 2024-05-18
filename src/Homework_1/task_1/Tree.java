@@ -1,4 +1,4 @@
-package yrok_1.task_1;
+package Homework_1.task_1;
 
 public class Tree {
     boolean isFruit;

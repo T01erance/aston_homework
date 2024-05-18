@@ -1,6 +1,4 @@
-package yrok_1.task_1;
-
-import yrok_1.task_1.Tree;
+package Homework_1.task_1;
 
 public class Main {
 
