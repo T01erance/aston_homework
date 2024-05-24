@@ -11,39 +11,40 @@ public class Task1 {
 
         String longestString = getLongestString(line1, line2, line3);
         String shortestString = getShortestString(line1, line2, line3);
-        System.out.println("самая длинная строка: " +  longestString + "\nЕё длина: " + longestString.length());
-        System.out.println("самая короткая строка: " +  shortestString + "\nЕё длина: " + shortestString.length());
+        System.out.println("самая длинная строка: " + longestString + "\nЕё длина: " + longestString.length());
+        System.out.println("самая короткая строка: " + shortestString + "\nЕё длина: " + shortestString.length());
     }
-    private static String getLongestString(String line1, String line2, String line3){
+
+    private static String getLongestString(String line1, String line2, String line3) {
         String longestString;
-        if(line1.length()>line2.length()){
-            if(line1.length()>line3.length()){
+        if (line1.length() > line2.length()) {
+            if (line1.length() > line3.length()) {
                 longestString = line1;
-            }else {
+            } else {
                 longestString = line3;
             }
-        }else{
-            if(line2.length()>line3.length()){
+        } else {
+            if (line2.length() > line3.length()) {
                 longestString = line2;
-            }else{
+            } else {
                 longestString = line3;
             }
         }
         return longestString;
     }
 
-    private static String getShortestString(String line1, String line2, String line3){
+    private static String getShortestString(String line1, String line2, String line3) {
         String shortestString;
-        if(line1.length()<line2.length()){
-            if(line1.length()<line3.length()){
+        if (line1.length() < line2.length()) {
+            if (line1.length() < line3.length()) {
                 shortestString = line1;
-            }else {
+            } else {
                 shortestString = line3;
             }
-        }else{
-            if(line2.length()<line3.length()){
+        } else {
+            if (line2.length() < line3.length()) {
                 shortestString = line2;
-            }else{
+            } else {
                 shortestString = line3;
             }
         }
