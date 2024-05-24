@@ -1,4 +1,4 @@
-package Homework_2.task_1;
+package homework_2.task_1;
 
 public interface Vehicle {
     void start();

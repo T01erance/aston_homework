@@ -1,4 +1,4 @@
-package Homework_2.task_3;
+package homework_2.task_3;
 
 public class Computer {
     public static class Processor{

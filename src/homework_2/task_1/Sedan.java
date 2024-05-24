@@ -1,4 +1,6 @@
-package Homework_2.task_1;
+package homework_2.task_1;
+
+import java.util.Objects;
 
 public class Sedan extends Car {
     int numberOfDoor;
@@ -39,5 +41,18 @@ public class Sedan extends Car {
                 ", luxuryLevel='" + luxuryLevel + '\'' +
                 ", fuelType='" + fuelType + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sedan sedan = (Sedan) o;
+        return numberOfDoor == sedan.numberOfDoor && trunkCapacity == sedan.trunkCapacity && Objects.equals(luxuryLevel, sedan.luxuryLevel) && Objects.equals(fuelType, sedan.fuelType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numberOfDoor, trunkCapacity, luxuryLevel, fuelType);
     }
 }

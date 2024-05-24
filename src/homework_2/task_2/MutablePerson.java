@@ -1,4 +1,4 @@
-package Homework_2.task_2;
+package homework_2.task_2;
 
 import java.util.List;
 

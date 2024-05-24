@@ -1,4 +1,4 @@
-package Homework_2.task_1;
+package homework_2.task_1;
 
 public class Test {
     public static void main(String[] args) {
@@ -19,6 +19,13 @@ public class Test {
         System.out.println(kamaz.getFuelType());
         System.out.println(kamaz.getNumberOfDoors());
         System.out.println(kamaz.getTrunkCapacity());
+
+        Sedan sedan1 = new Sedan(4,"Q", 150, "95");
+        Sedan sedan2 = new Sedan(4,"Q", 150, "95");
+        System.out.println(sedan1.hashCode());
+        System.out.println(sedan2.hashCode());
+
+        System.out.println(sedan1.equals(sedan2));
 
     }
 }
