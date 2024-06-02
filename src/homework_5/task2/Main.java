@@ -71,5 +71,4 @@ public class Main {
         return (double) employees.stream().mapToInt(x -> x.getSalary()).sum() / employees.size();
     }
 
-
 }
